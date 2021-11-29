@@ -1,0 +1,184 @@
+@import url("fonts.css");
+@import url('https://rsms.me/inter/inter.css');
+
+
+.col-sm-7 {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.col-sm-5 {
+	padding-left: 8%;
+}
+
+.container {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+
+hr {
+  background-color:black;
+  height: 1px;
+}
+
+button {
+  border: solid;
+  color: #9F6A7C;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  border: solid;
+  color: #9F6A7C;
+  background-color: #9F6A7C;
+  border-color: #9F6A7C;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+
+#head {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 2%;
+  /*padding-bottom: 2%;*/
+}
+
+div {
+	padding-left: 2%;
+	padding-right: 2%;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  /*display: inline;*/
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	text-align: left;
+	width: 100%;
+  	background-color: #282828;
+  	font-family: 'Inter', sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #282828;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #282828;
+  border-radius: 100px;
+}
+#aboutme {
+	padding-top: 0px;
+}
+
+h1 {
+	font-size: 48px;
+	/*font-family: Bodoni 72, serif;*/
+	color: #AB919A; /*cream*/
+	text-align: left;
+	margin-top: 0px;
+	padding-bottom: 25px;
+	font-weight: bold;
+}
+
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+
+#bar {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 60px;
+  /*font-family: "montserrat-medium", sans-serif;*/
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+    color: #854059;
+    /*color: #F0F0F0;*/
+    text-decoration: none;
+}
+
+a:hover {
+     color:#73213D; 
+     /*color: #854059;*/
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.current-link {
+    color: #73213D;
+}
+
+p {
+	color: #C8C8C8;
+	font-size: 1.2em;
+}
+
+#greeting {
+	font-size: 2em;
+	margin-bottom: 1.5em;
+	color: #A38560; 
+}
+
+#contact {
+	font-size: 1.2em;
+	margin-top: 2em;
+
+}
+
+#links {
+	margin-right: 12px;
+	color: #C8C8C8;
+
+}
+
+#links:hover {
+	color:#73213D; 
+}
+.text-lft {
+  width: 46%;
+}
+.img-right {
+  width: 54%;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .text-lft {
+    width: 100%;
+  }
+  .img-right {
+    width: 100%;
+  }
+  body{
+    text-align: left;
+  }
+}

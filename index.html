@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Abhishek Gurav </title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<script src="design.js">
+		// document.querySelectorAll('a[href="'+document.URL+'"]').forE‌​ach(function(elem){e‌​lem.className += ' current-link'});
+
+		function getCurrentLinkFrom(links){
+
+		    var curPage = document.URL;
+		    curPage = curPage.substr(curPage.lastIndexOf("/")) ;
+
+		    links.each(function(){
+		        var linkPage = $(this).attr("href");
+		        linkPage = linkPage.substr(linkPage.lastIndexOf("/"));
+		        if (curPage == linkPage){
+		            return $(this);
+		        }
+		    });
+		};
+
+		$(document).ready(function(){
+		    var currentLink = getCurrentLinkFrom($("navbar a"));
+		    currentLink.addClass("current_link") ;
+		});
+
+	</script>
+
+	
+	<style>
+      body {
+
+      	/*font-family: 'Inter', sans-serif;*/
+
+        /*font-family: 'Barlow', serif;*/
+        /*font-size: 48px;*/
+      }
+      .text-left{
+          margin-top: -2vw;
+      }
+    </style>
+    <link rel="icon" href="favicon.png">
+
+</head>
+<div class="container-fluid">   
+	<body>
+
+		<!-- <header class="container"> -->
+		<div class="row" style="font-family: Barlow;" id="head">
+			<!-- <h1 class="col-sm-4"; id="amanda"> <a href="index.html"><img border="0" alt="Abhishek Gurav" src="ahlogo.png" width=22%></a> </h1> -->
+			<nav class="col-sm-4 text-left"><a href="index.html"><img border="0" alt="Abhishek Gurav" src="AG.png" height="150px;"></a></nav>
+		      <nav class="col-sm-8 text-right">
+		        <!-- <a href="aboutme.html" id="bar"> About Me </a> -->
+		        <a href="index.html" id="bar" class="current-link"> <b>DESIGN</b> </a>
+		        <a href="project.html" id="bar"> <b>PROJECT</b> </a>
+		        <a href="about.html" id="bar"> <b>ABOUT</b> </a>
+		        <a href="resume.pdf" id="bar"> <b>RESUME</b> </a>
+		      </nav>
+		</div>
+		<!-- </header> -->
+		<div class="row-content">
+
+			<h1 class="carousel">Abhishek Gurav
+			  <span
+			     class="txt-rotate"
+			     data-period="2000"
+			     data-rotate='[ "is a web developer", "lives in <br>Maharashtra,India.", "enjoys Night Walks with friends", "is friendly :-)" ]'></span>
+			</h1>
+
+		</div>
+
+	
+
+    		<!-- <div class="projects">
+    			
+    			<a href="#"><img src="#" style="width:100%;" id="img"></a>
+
+    		</div>
+
+    		<div class="projects">
+    			
+    			<a href="#"><img src="#" style="width:100%;" id="img"></a>
+
+    		</div> -->
+
+    		
+	</body>
+</div>
+</html>
